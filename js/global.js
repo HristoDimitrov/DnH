@@ -3,6 +3,7 @@ $('input#name-submit').on('click', function () {
 	$.ajax({ 
             url: 'ajax/name.php',
             type: 'POST',
+            dataType: 'text',
             data: {
                 name:name,
 
