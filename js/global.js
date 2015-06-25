@@ -1,7 +1,7 @@
 $('input#name-submit').on('click', function () {
 	var name = $('input#name').val();
 	$.ajax({ 
-            url: 'ajax/name.php',
+            url: 'http://hristodimitrov.github.io/DnH/ajax/name.php',
             type: 'POST',
             dataType: 'text',
             data: {
