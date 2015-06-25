@@ -8,8 +8,8 @@ $('input#name-submit').on('click', function () {
                 name:name,
 
             },
-            success: function(mydata) {
-                alert(mydata);
+            success: function(data) {
+                $("#"+name).html(data);
             }
         });
 	
