@@ -1,5 +1,7 @@
 $('input#name-submit').on('click', function () {
     var name = $('input#name').val();
-         alert(name);
+	$.post('ajax/name.php', {name:name}, function(data) {	
+        alert(data);
+	});
  
 });
