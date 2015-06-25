@@ -1,5 +1,5 @@
 $('input#name-submit').on('click', function () {
-    
-         alert(1);
+    var name = $('input#name').val();
+         alert(name);
  
 });
