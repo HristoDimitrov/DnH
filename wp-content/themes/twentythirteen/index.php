@@ -14,25 +14,24 @@
  * @since Twenty Thirteen 1.0
  */
 
-get_header(); ?>
+<!DOCTYPE html>
+<html>
+<head>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-		<?php if ( have_posts() ) : ?>
+<title> AJAX  DB</title>
+</head>
+    <body>
 
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
+    NAME: <input type="text" id="name">
+    <input type="submit" id="name-submit" value="Grab it">
+    <div id="name-data"></div>
+    
 
-			<?php twentythirteen_paging_nav(); ?>
+    <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script src="js/global.js"></script>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
+ 
+    </body>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+</html>
